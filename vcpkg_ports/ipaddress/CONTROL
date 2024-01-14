@@ -1,0 +1,5 @@
+Source: ipaddress
+Version: 2020-08-03
+Description: ipaddress is a modern IP implementation.
+Homepage: https://github.com/CookieDose/ipaddress
+Build-Depends: gtest

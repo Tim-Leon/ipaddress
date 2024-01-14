@@ -1,0 +1,48 @@
+\hypertarget{_i_p_end_point_8h}{}\doxysection{S\+:/dev/\+IPAddress/\+IPAddress/include/\+IPEnd\+Point.h File Reference}
+\label{_i_p_end_point_8h}\index{S:/dev/IPAddress/IPAddress/include/IPEndPoint.h@{S:/dev/IPAddress/IPAddress/include/IPEndPoint.h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}IPAddress.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}util/\+Endianness.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classip__address_1_1_i_p_end_point}{ip\+\_\+address\+::\+IPEnd\+Point}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceip__address}{ip\+\_\+address}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_i_p_end_point_8h_afc84728a7653838b90704a9ac4573635}{DEFAULT\+\_\+\+IP\+\_\+\+ENDPOINT\+\_\+\+PORT}}~8080
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{namespaceip__address_afb441d28a6258f141299ef262f041c07}{ip\+\_\+address\+::port\+\_\+t}} = uint16\+\_\+t
+\item 
+using \mbox{\hyperlink{namespaceip__address_aa949a9b5586cb862dd86b03c5466e15b}{ip\+\_\+address\+::port\+\_\+host\+\_\+byte\+\_\+order\+\_\+t}} = port\+\_\+t
+\item 
+using \mbox{\hyperlink{namespaceip__address_a07c6d040e0324929d78d3f7b89e59a4b}{ip\+\_\+address\+::port\+\_\+network\+\_\+byte\+\_\+order\+\_\+t}} = uint16\+\_\+t \+\_\+port\+\_\+network\+\_\+byte\+\_\+order\+\_\+t
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+NODISCARD port\+\_\+network\+\_\+byte\+\_\+order\+\_\+t \mbox{\hyperlink{namespaceip__address_a424bfb1be3b6dba2dbc481a6704010c0}{ip\+\_\+address\+::to\+\_\+network\+\_\+byte\+\_\+order}} (port\+\_\+host\+\_\+byte\+\_\+order\+\_\+t arg) noexcept
+\item 
+NODISCARD port\+\_\+host\+\_\+byte\+\_\+order\+\_\+t \mbox{\hyperlink{namespaceip__address_ae6a01a90b062152369d6b94c4a6672a3}{ip\+\_\+address\+::to\+\_\+host\+\_\+byte\+\_\+order}} (\+\_\+port\+\_\+network\+\_\+byte\+\_\+order\+\_\+t arg) noexcept
+\item 
+constexpr NODISCARD uint16\+\_\+t \mbox{\hyperlink{namespaceip__address_a048f6f776ee3595dad8abab041ee172f}{ip\+\_\+address\+::to\+\_\+integer}} (\+\_\+port\+\_\+network\+\_\+byte\+\_\+order\+\_\+t arg) noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_i_p_end_point_8h_afc84728a7653838b90704a9ac4573635}\label{_i_p_end_point_8h_afc84728a7653838b90704a9ac4573635}} 
+\index{IPEndPoint.h@{IPEndPoint.h}!DEFAULT\_IP\_ENDPOINT\_PORT@{DEFAULT\_IP\_ENDPOINT\_PORT}}
+\index{DEFAULT\_IP\_ENDPOINT\_PORT@{DEFAULT\_IP\_ENDPOINT\_PORT}!IPEndPoint.h@{IPEndPoint.h}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_IP\_ENDPOINT\_PORT}{DEFAULT\_IP\_ENDPOINT\_PORT}}
+{\footnotesize\ttfamily \#define DEFAULT\+\_\+\+IP\+\_\+\+ENDPOINT\+\_\+\+PORT~8080}
+

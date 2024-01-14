@@ -1,0 +1,430 @@
+\hypertarget{namespaceip__address}{}\doxysection{ip\+\_\+address Namespace Reference}
+\label{namespaceip__address}\index{ip\_address@{ip\_address}}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceip__address_1_1details}{details}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structip__address_1_1m_network_address}{m\+Network\+Address}}
+\item 
+class \mbox{\hyperlink{classip__address_1_1_i_p_address}{IPAddress}}
+\item 
+class \mbox{\hyperlink{classip__address_1_1_i_p_address_v4}{IPAddress\+V4}}
+\item 
+class \mbox{\hyperlink{classip__address_1_1_i_p_address_v6}{IPAddress\+V6}}
+\item 
+class \mbox{\hyperlink{classip__address_1_1_i_p_end_point}{IPEnd\+Point}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{namespaceip__address_a4365ce835b6546e1719f6ea93f341253}{Byte\+Array3}} = std\+::array$<$ uint8\+\_\+t, 3 $>$
+\item 
+using \mbox{\hyperlink{namespaceip__address_ad187786a2ccdd9d9ecef844889c68456}{Byte\+Array4}} = std\+::array$<$ uint8\+\_\+t, 4 $>$
+\item 
+using \mbox{\hyperlink{namespaceip__address_a70b92d800e92ab389cdd414809a8a888}{Byte\+Array16}} = std\+::array$<$ uint8\+\_\+t, 16 $>$
+\item 
+using \mbox{\hyperlink{namespaceip__address_ac89abd04b199139356d35e5792c76a98}{Word\+Array8}} = std\+::array$<$ uint16\+\_\+t, 8 $>$
+\item 
+using \mbox{\hyperlink{namespaceip__address_afb441d28a6258f141299ef262f041c07}{port\+\_\+t}} = uint16\+\_\+t
+\item 
+using \mbox{\hyperlink{namespaceip__address_aa949a9b5586cb862dd86b03c5466e15b}{port\+\_\+host\+\_\+byte\+\_\+order\+\_\+t}} = \mbox{\hyperlink{namespaceip__address_afb441d28a6258f141299ef262f041c07}{port\+\_\+t}}
+\item 
+using \mbox{\hyperlink{namespaceip__address_a07c6d040e0324929d78d3f7b89e59a4b}{port\+\_\+network\+\_\+byte\+\_\+order\+\_\+t}} = uint16\+\_\+t \+\_\+port\+\_\+network\+\_\+byte\+\_\+order\+\_\+t
+\item 
+using \mbox{\hyperlink{namespaceip__address_a64bb4d6723dd7c65393c6428af944bec}{ip\+\_\+version\+\_\+ut}} = std\+::underlying\+\_\+type$<$ \mbox{\hyperlink{namespaceip__address_aaa97eb707f9704b683a75b089ccca03a}{IPVersion}} $>$\+::type
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{namespaceip__address_aac57069de31b7a57821d2de21870ca9c}{IPAddress\+V4\+Class}} \{ \newline
+\mbox{\hyperlink{namespaceip__address_aac57069de31b7a57821d2de21870ca9ca7fc56270e7a70fa81a5935b72eacbe29}{A}}
+, \mbox{\hyperlink{namespaceip__address_aac57069de31b7a57821d2de21870ca9ca9d5ed678fe57bcca610140957afab571}{B}}
+, \mbox{\hyperlink{namespaceip__address_aac57069de31b7a57821d2de21870ca9ca0d61f8370cad1d412f80b84d143e1257}{C}}
+, \mbox{\hyperlink{namespaceip__address_aac57069de31b7a57821d2de21870ca9caf623e75af30e62bbd73d6df5b50bb7b5}{D}}
+, \newline
+\mbox{\hyperlink{namespaceip__address_aac57069de31b7a57821d2de21870ca9ca3a3ea00cfc35332cedf6e5e9a32e94da}{E}}
+ \}
+\item 
+enum class \mbox{\hyperlink{namespaceip__address_aaa97eb707f9704b683a75b089ccca03a}{IPVersion}} \{ \newline
+\mbox{\hyperlink{namespaceip__address_aaa97eb707f9704b683a75b089ccca03aa25c2dc47991b3df171ed5192bcf70390}{k\+Unknown}}
+, \mbox{\hyperlink{namespaceip__address_aaa97eb707f9704b683a75b089ccca03aa6fdcd9b7feb0e92456b072ef3505bb65}{k\+IPv4}} = AF\+\_\+\+INET
+, \mbox{\hyperlink{namespaceip__address_aaa97eb707f9704b683a75b089ccca03aaff1bc132716a26ab844c23103b483851}{k\+IPv6}} = AF\+\_\+\+INET6
+, \mbox{\hyperlink{namespaceip__address_aaa97eb707f9704b683a75b089ccca03aa57be46d472a991bfcfbf9a957c24a44a}{k\+IPv4\+Or\+IPv6}}
+, \newline
+\mbox{\hyperlink{namespaceip__address_aaa97eb707f9704b683a75b089ccca03aa6470a66883e033a47a42dafebe2fc37b}{k\+IPv4\+And\+IPv6}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T , size\+\_\+t Size$>$ }\\std\+::array$<$ T, Size $>$ \mbox{\hyperlink{namespaceip__address_a989815a681b53d381ca12b33e69b727e}{mask}} (const std\+::array$<$ T, Size $>$ \&x, const std\+::array$<$ T, Size $>$ \&y)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::vector$<$ T $>$ \mbox{\hyperlink{namespaceip__address_abb1c085e2ad95888c74d71f986217f5c}{mask}} (const std\+::vector$<$ T $>$ \&x, const std\+::vector$<$ T $>$ \&y)
+\item 
+std\+::string \mbox{\hyperlink{namespaceip__address_ad6f16c07bf6410d991f3a3b99cb28cae}{mask}} (const std\+::string \&x, const std\+::string \&y)
+\item 
+constexpr const char $\ast$ \mbox{\hyperlink{namespaceip__address_ad0fced5590907224ef21c6a5e39dbaa3}{To\+String}} (\mbox{\hyperlink{namespaceip__address_aac57069de31b7a57821d2de21870ca9c}{IPAddress\+V4\+Class}} x)
+\item 
+NODISCARD \mbox{\hyperlink{namespaceip__address_a07c6d040e0324929d78d3f7b89e59a4b}{port\+\_\+network\+\_\+byte\+\_\+order\+\_\+t}} \mbox{\hyperlink{namespaceip__address_a424bfb1be3b6dba2dbc481a6704010c0}{to\+\_\+network\+\_\+byte\+\_\+order}} (\mbox{\hyperlink{namespaceip__address_aa949a9b5586cb862dd86b03c5466e15b}{port\+\_\+host\+\_\+byte\+\_\+order\+\_\+t}} arg) noexcept
+\item 
+NODISCARD \mbox{\hyperlink{namespaceip__address_aa949a9b5586cb862dd86b03c5466e15b}{port\+\_\+host\+\_\+byte\+\_\+order\+\_\+t}} \mbox{\hyperlink{namespaceip__address_ae6a01a90b062152369d6b94c4a6672a3}{to\+\_\+host\+\_\+byte\+\_\+order}} (\+\_\+port\+\_\+network\+\_\+byte\+\_\+order\+\_\+t arg) noexcept
+\item 
+constexpr NODISCARD uint16\+\_\+t \mbox{\hyperlink{namespaceip__address_a048f6f776ee3595dad8abab041ee172f}{to\+\_\+integer}} (\+\_\+port\+\_\+network\+\_\+byte\+\_\+order\+\_\+t arg) noexcept
+\item 
+constexpr NODISCARD bool \mbox{\hyperlink{namespaceip__address_ab1349850a517b0010e7ae458140ff5b0}{operator==}} (\mbox{\hyperlink{namespaceip__address_aaa97eb707f9704b683a75b089ccca03a}{IPVersion}} lhs, \mbox{\hyperlink{namespaceip__address_aaa97eb707f9704b683a75b089ccca03a}{IPVersion}} rhs)
+\item 
+constexpr NODISCARD bool \mbox{\hyperlink{namespaceip__address_a07080c15027d6205df465a1271e7771b}{operator!=}} (const \mbox{\hyperlink{namespaceip__address_aaa97eb707f9704b683a75b089ccca03a}{IPVersion}} lhs, const \mbox{\hyperlink{namespaceip__address_aaa97eb707f9704b683a75b089ccca03a}{IPVersion}} rhs)
+\item 
+constexpr const char $\ast$ \mbox{\hyperlink{namespaceip__address_a31c89da8993f17be188be11a1ee15cd0}{To\+String}} (\mbox{\hyperlink{namespaceip__address_aaa97eb707f9704b683a75b089ccca03a}{IPVersion}} x)
+\item 
+uint16\+\_\+t \mbox{\hyperlink{namespaceip__address_aae7fc906cb93ec6b3ceeea636d8741a0}{Byte\+Swap}} (uint16\+\_\+t x)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{namespaceip__address_a77b96ff703f4eeb91d46047381574d08}{Byte\+Swap}} (uint32\+\_\+t x)
+\item 
+uint64\+\_\+t \mbox{\hyperlink{namespaceip__address_ae62df3ba094c9777cd07a893e333c1f9}{Byte\+Swap}} (uint64\+\_\+t x)
+\item 
+uint16\+\_\+t \mbox{\hyperlink{namespaceip__address_ab8e1c532af5cb0a6a5112ddee2df337e}{Host\+To\+Net16}} (uint16\+\_\+t x)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{namespaceip__address_aeac37c449f10f9c35a833f969757c66a}{Host\+To\+Net32}} (uint32\+\_\+t x)
+\item 
+uint64\+\_\+t \mbox{\hyperlink{namespaceip__address_a00c5ee32d13af8fe46d1a73f7cc2fb25}{Host\+To\+Net64}} (uint64\+\_\+t x)
+\item 
+uint16\+\_\+t \mbox{\hyperlink{namespaceip__address_aca6c88875aef437db73bfe0055f06997}{Net\+To\+Host16}} (uint16\+\_\+t x)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{namespaceip__address_a7cb6eaf56e21a1cfc16dc62464fd0c50}{Net\+To\+Host32}} (uint32\+\_\+t x)
+\item 
+uint64\+\_\+t \mbox{\hyperlink{namespaceip__address_a06aea5a4d7db1d3cecf7c00c368ef75d}{Net\+To\+Host64}} (uint64\+\_\+t x)
+\item 
+int \mbox{\hyperlink{namespaceip__address_a9add724bd5579fefe1dd1ffa53bfe7a4}{WString\+To\+StringS}} (const std\+::wstring \&wstr, std\+::string \&result)
+\item 
+std\+::string \mbox{\hyperlink{namespaceip__address_aa7b6adbde5c95bd2cd1c22cd70b87ea4}{WString\+To\+String}} (const std\+::wstring \&wstr)
+\item 
+int \mbox{\hyperlink{namespaceip__address_ac6177eea60f87fbed8909a889beca575}{String\+To\+WStringS}} (const std\+::string \&str, std\+::wstring \&result)
+\item 
+std\+::wstring \mbox{\hyperlink{namespaceip__address_ac2912e0bf768f539a7808a00f7fef921}{String\+To\+WString}} (const std\+::string \&str)
+\item 
+std\+::ostream \& \mbox{\hyperlink{namespaceip__address_a80fafd37a6a83f36f162d65e3180bea0}{operator$<$$<$}} (std\+::ostream \&rhs, const \mbox{\hyperlink{classip__address_1_1_i_p_address}{IPAddress}} \&lhs)
+\item 
+std\+::ostream \& \mbox{\hyperlink{namespaceip__address_a24c7c9fcd3e766cca70f9b4bac3fe6cf}{operator$<$$<$}} (std\+::ostream \&rhs, const \mbox{\hyperlink{classip__address_1_1_i_p_address_v4}{IPAddress\+V4}} \&lhs)
+\item 
+std\+::ostream \& \mbox{\hyperlink{namespaceip__address_aca7a90a37e9b45429d0706f774e1223d}{operator$<$$<$}} (std\+::ostream \&rhs, const \mbox{\hyperlink{classip__address_1_1_i_p_address_v6}{IPAddress\+V6}} \&lhs)
+\item 
+std\+::ostream \& \mbox{\hyperlink{namespaceip__address_ad5486f8fd1bcd89041c465d2926abe33}{operator$<$$<$}} (std\+::ostream \&rhs, const \mbox{\hyperlink{classip__address_1_1_i_p_end_point}{IPEnd\+Point}} \&lhs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{namespaceip__address_a70b92d800e92ab389cdd414809a8a888}\label{namespaceip__address_a70b92d800e92ab389cdd414809a8a888}} 
+\index{ip\_address@{ip\_address}!ByteArray16@{ByteArray16}}
+\index{ByteArray16@{ByteArray16}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{ByteArray16}{ByteArray16}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespaceip__address_a70b92d800e92ab389cdd414809a8a888}{ip\+\_\+address\+::\+Byte\+Array16}} = typedef std\+::array$<$uint8\+\_\+t, 16$>$}
+
+\mbox{\Hypertarget{namespaceip__address_a4365ce835b6546e1719f6ea93f341253}\label{namespaceip__address_a4365ce835b6546e1719f6ea93f341253}} 
+\index{ip\_address@{ip\_address}!ByteArray3@{ByteArray3}}
+\index{ByteArray3@{ByteArray3}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{ByteArray3}{ByteArray3}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespaceip__address_a4365ce835b6546e1719f6ea93f341253}{ip\+\_\+address\+::\+Byte\+Array3}} = typedef std\+::array$<$uint8\+\_\+t, 3$>$}
+
+\mbox{\Hypertarget{namespaceip__address_ad187786a2ccdd9d9ecef844889c68456}\label{namespaceip__address_ad187786a2ccdd9d9ecef844889c68456}} 
+\index{ip\_address@{ip\_address}!ByteArray4@{ByteArray4}}
+\index{ByteArray4@{ByteArray4}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{ByteArray4}{ByteArray4}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespaceip__address_ad187786a2ccdd9d9ecef844889c68456}{ip\+\_\+address\+::\+Byte\+Array4}} = typedef std\+::array$<$uint8\+\_\+t, 4$>$}
+
+\mbox{\Hypertarget{namespaceip__address_a64bb4d6723dd7c65393c6428af944bec}\label{namespaceip__address_a64bb4d6723dd7c65393c6428af944bec}} 
+\index{ip\_address@{ip\_address}!ip\_version\_ut@{ip\_version\_ut}}
+\index{ip\_version\_ut@{ip\_version\_ut}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{ip\_version\_ut}{ip\_version\_ut}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespaceip__address_a64bb4d6723dd7c65393c6428af944bec}{ip\+\_\+address\+::ip\+\_\+version\+\_\+ut}} = typedef std\+::underlying\+\_\+type$<$\mbox{\hyperlink{namespaceip__address_aaa97eb707f9704b683a75b089ccca03a}{IPVersion}}$>$\+::type}
+
+\mbox{\Hypertarget{namespaceip__address_aa949a9b5586cb862dd86b03c5466e15b}\label{namespaceip__address_aa949a9b5586cb862dd86b03c5466e15b}} 
+\index{ip\_address@{ip\_address}!port\_host\_byte\_order\_t@{port\_host\_byte\_order\_t}}
+\index{port\_host\_byte\_order\_t@{port\_host\_byte\_order\_t}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{port\_host\_byte\_order\_t}{port\_host\_byte\_order\_t}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespaceip__address_aa949a9b5586cb862dd86b03c5466e15b}{ip\+\_\+address\+::port\+\_\+host\+\_\+byte\+\_\+order\+\_\+t}} = typedef \mbox{\hyperlink{namespaceip__address_afb441d28a6258f141299ef262f041c07}{port\+\_\+t}}}
+
+\mbox{\Hypertarget{namespaceip__address_a07c6d040e0324929d78d3f7b89e59a4b}\label{namespaceip__address_a07c6d040e0324929d78d3f7b89e59a4b}} 
+\index{ip\_address@{ip\_address}!port\_network\_byte\_order\_t@{port\_network\_byte\_order\_t}}
+\index{port\_network\_byte\_order\_t@{port\_network\_byte\_order\_t}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{port\_network\_byte\_order\_t}{port\_network\_byte\_order\_t}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespaceip__address_a07c6d040e0324929d78d3f7b89e59a4b}{ip\+\_\+address\+::port\+\_\+network\+\_\+byte\+\_\+order\+\_\+t}} = typedef uint16\+\_\+t \+\_\+port\+\_\+network\+\_\+byte\+\_\+order\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+\mbox{\Hypertarget{namespaceip__address_afb441d28a6258f141299ef262f041c07}\label{namespaceip__address_afb441d28a6258f141299ef262f041c07}} 
+\index{ip\_address@{ip\_address}!port\_t@{port\_t}}
+\index{port\_t@{port\_t}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{port\_t}{port\_t}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespaceip__address_afb441d28a6258f141299ef262f041c07}{ip\+\_\+address\+::port\+\_\+t}} = typedef uint16\+\_\+t}
+
+\mbox{\Hypertarget{namespaceip__address_ac89abd04b199139356d35e5792c76a98}\label{namespaceip__address_ac89abd04b199139356d35e5792c76a98}} 
+\index{ip\_address@{ip\_address}!WordArray8@{WordArray8}}
+\index{WordArray8@{WordArray8}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{WordArray8}{WordArray8}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespaceip__address_ac89abd04b199139356d35e5792c76a98}{ip\+\_\+address\+::\+Word\+Array8}} = typedef std\+::array$<$uint16\+\_\+t, 8$>$}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespaceip__address_aac57069de31b7a57821d2de21870ca9c}\label{namespaceip__address_aac57069de31b7a57821d2de21870ca9c}} 
+\index{ip\_address@{ip\_address}!IPAddressV4Class@{IPAddressV4Class}}
+\index{IPAddressV4Class@{IPAddressV4Class}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{IPAddressV4Class}{IPAddressV4Class}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespaceip__address_aac57069de31b7a57821d2de21870ca9c}{ip\+\_\+address\+::\+IPAddress\+V4\+Class}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A@{A}!ip\_address@{ip\_address}}\index{ip\_address@{ip\_address}!A@{A}}}\mbox{\Hypertarget{namespaceip__address_aac57069de31b7a57821d2de21870ca9ca7fc56270e7a70fa81a5935b72eacbe29}\label{namespaceip__address_aac57069de31b7a57821d2de21870ca9ca7fc56270e7a70fa81a5935b72eacbe29}} 
+A&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B@{B}!ip\_address@{ip\_address}}\index{ip\_address@{ip\_address}!B@{B}}}\mbox{\Hypertarget{namespaceip__address_aac57069de31b7a57821d2de21870ca9ca9d5ed678fe57bcca610140957afab571}\label{namespaceip__address_aac57069de31b7a57821d2de21870ca9ca9d5ed678fe57bcca610140957afab571}} 
+B&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C@{C}!ip\_address@{ip\_address}}\index{ip\_address@{ip\_address}!C@{C}}}\mbox{\Hypertarget{namespaceip__address_aac57069de31b7a57821d2de21870ca9ca0d61f8370cad1d412f80b84d143e1257}\label{namespaceip__address_aac57069de31b7a57821d2de21870ca9ca0d61f8370cad1d412f80b84d143e1257}} 
+C&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D@{D}!ip\_address@{ip\_address}}\index{ip\_address@{ip\_address}!D@{D}}}\mbox{\Hypertarget{namespaceip__address_aac57069de31b7a57821d2de21870ca9caf623e75af30e62bbd73d6df5b50bb7b5}\label{namespaceip__address_aac57069de31b7a57821d2de21870ca9caf623e75af30e62bbd73d6df5b50bb7b5}} 
+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E@{E}!ip\_address@{ip\_address}}\index{ip\_address@{ip\_address}!E@{E}}}\mbox{\Hypertarget{namespaceip__address_aac57069de31b7a57821d2de21870ca9ca3a3ea00cfc35332cedf6e5e9a32e94da}\label{namespaceip__address_aac57069de31b7a57821d2de21870ca9ca3a3ea00cfc35332cedf6e5e9a32e94da}} 
+E&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceip__address_aaa97eb707f9704b683a75b089ccca03a}\label{namespaceip__address_aaa97eb707f9704b683a75b089ccca03a}} 
+\index{ip\_address@{ip\_address}!IPVersion@{IPVersion}}
+\index{IPVersion@{IPVersion}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{IPVersion}{IPVersion}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespaceip__address_aaa97eb707f9704b683a75b089ccca03a}{ip\+\_\+address\+::\+IPVersion}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kUnknown@{kUnknown}!ip\_address@{ip\_address}}\index{ip\_address@{ip\_address}!kUnknown@{kUnknown}}}\mbox{\Hypertarget{namespaceip__address_aaa97eb707f9704b683a75b089ccca03aa25c2dc47991b3df171ed5192bcf70390}\label{namespaceip__address_aaa97eb707f9704b683a75b089ccca03aa25c2dc47991b3df171ed5192bcf70390}} 
+k\+Unknown&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kIPv4@{kIPv4}!ip\_address@{ip\_address}}\index{ip\_address@{ip\_address}!kIPv4@{kIPv4}}}\mbox{\Hypertarget{namespaceip__address_aaa97eb707f9704b683a75b089ccca03aa6fdcd9b7feb0e92456b072ef3505bb65}\label{namespaceip__address_aaa97eb707f9704b683a75b089ccca03aa6fdcd9b7feb0e92456b072ef3505bb65}} 
+k\+IPv4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kIPv6@{kIPv6}!ip\_address@{ip\_address}}\index{ip\_address@{ip\_address}!kIPv6@{kIPv6}}}\mbox{\Hypertarget{namespaceip__address_aaa97eb707f9704b683a75b089ccca03aaff1bc132716a26ab844c23103b483851}\label{namespaceip__address_aaa97eb707f9704b683a75b089ccca03aaff1bc132716a26ab844c23103b483851}} 
+k\+IPv6&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kIPv4OrIPv6@{kIPv4OrIPv6}!ip\_address@{ip\_address}}\index{ip\_address@{ip\_address}!kIPv4OrIPv6@{kIPv4OrIPv6}}}\mbox{\Hypertarget{namespaceip__address_aaa97eb707f9704b683a75b089ccca03aa57be46d472a991bfcfbf9a957c24a44a}\label{namespaceip__address_aaa97eb707f9704b683a75b089ccca03aa57be46d472a991bfcfbf9a957c24a44a}} 
+k\+IPv4\+Or\+IPv6&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kIPv4AndIPv6@{kIPv4AndIPv6}!ip\_address@{ip\_address}}\index{ip\_address@{ip\_address}!kIPv4AndIPv6@{kIPv4AndIPv6}}}\mbox{\Hypertarget{namespaceip__address_aaa97eb707f9704b683a75b089ccca03aa6470a66883e033a47a42dafebe2fc37b}\label{namespaceip__address_aaa97eb707f9704b683a75b089ccca03aa6470a66883e033a47a42dafebe2fc37b}} 
+k\+IPv4\+And\+IPv6&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceip__address_aae7fc906cb93ec6b3ceeea636d8741a0}\label{namespaceip__address_aae7fc906cb93ec6b3ceeea636d8741a0}} 
+\index{ip\_address@{ip\_address}!ByteSwap@{ByteSwap}}
+\index{ByteSwap@{ByteSwap}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{ByteSwap()}{ByteSwap()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily uint16\+\_\+t ip\+\_\+address\+::\+Byte\+Swap (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespaceip__address_a77b96ff703f4eeb91d46047381574d08}\label{namespaceip__address_a77b96ff703f4eeb91d46047381574d08}} 
+\index{ip\_address@{ip\_address}!ByteSwap@{ByteSwap}}
+\index{ByteSwap@{ByteSwap}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{ByteSwap()}{ByteSwap()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily uint32\+\_\+t ip\+\_\+address\+::\+Byte\+Swap (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespaceip__address_ae62df3ba094c9777cd07a893e333c1f9}\label{namespaceip__address_ae62df3ba094c9777cd07a893e333c1f9}} 
+\index{ip\_address@{ip\_address}!ByteSwap@{ByteSwap}}
+\index{ByteSwap@{ByteSwap}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{ByteSwap()}{ByteSwap()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily uint64\+\_\+t ip\+\_\+address\+::\+Byte\+Swap (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespaceip__address_ab8e1c532af5cb0a6a5112ddee2df337e}\label{namespaceip__address_ab8e1c532af5cb0a6a5112ddee2df337e}} 
+\index{ip\_address@{ip\_address}!HostToNet16@{HostToNet16}}
+\index{HostToNet16@{HostToNet16}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{HostToNet16()}{HostToNet16()}}
+{\footnotesize\ttfamily uint16\+\_\+t ip\+\_\+address\+::\+Host\+To\+Net16 (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespaceip__address_aeac37c449f10f9c35a833f969757c66a}\label{namespaceip__address_aeac37c449f10f9c35a833f969757c66a}} 
+\index{ip\_address@{ip\_address}!HostToNet32@{HostToNet32}}
+\index{HostToNet32@{HostToNet32}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{HostToNet32()}{HostToNet32()}}
+{\footnotesize\ttfamily uint32\+\_\+t ip\+\_\+address\+::\+Host\+To\+Net32 (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespaceip__address_a00c5ee32d13af8fe46d1a73f7cc2fb25}\label{namespaceip__address_a00c5ee32d13af8fe46d1a73f7cc2fb25}} 
+\index{ip\_address@{ip\_address}!HostToNet64@{HostToNet64}}
+\index{HostToNet64@{HostToNet64}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{HostToNet64()}{HostToNet64()}}
+{\footnotesize\ttfamily uint64\+\_\+t ip\+\_\+address\+::\+Host\+To\+Net64 (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespaceip__address_a989815a681b53d381ca12b33e69b727e}\label{namespaceip__address_a989815a681b53d381ca12b33e69b727e}} 
+\index{ip\_address@{ip\_address}!mask@{mask}}
+\index{mask@{mask}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{mask()}{mask()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t Size$>$ \\
+std\+::array$<$T, Size$>$ ip\+\_\+address\+::mask (\begin{DoxyParamCaption}\item[{const std\+::array$<$ T, Size $>$ \&}]{x,  }\item[{const std\+::array$<$ T, Size $>$ \&}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceip__address_ad6f16c07bf6410d991f3a3b99cb28cae}\label{namespaceip__address_ad6f16c07bf6410d991f3a3b99cb28cae}} 
+\index{ip\_address@{ip\_address}!mask@{mask}}
+\index{mask@{mask}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{mask()}{mask()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily std\+::string ip\+\_\+address\+::mask (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{x,  }\item[{const std\+::string \&}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespaceip__address_abb1c085e2ad95888c74d71f986217f5c}\label{namespaceip__address_abb1c085e2ad95888c74d71f986217f5c}} 
+\index{ip\_address@{ip\_address}!mask@{mask}}
+\index{mask@{mask}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{mask()}{mask()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::vector$<$T$>$ ip\+\_\+address\+::mask (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ T $>$ \&}]{x,  }\item[{const std\+::vector$<$ T $>$ \&}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceip__address_aca6c88875aef437db73bfe0055f06997}\label{namespaceip__address_aca6c88875aef437db73bfe0055f06997}} 
+\index{ip\_address@{ip\_address}!NetToHost16@{NetToHost16}}
+\index{NetToHost16@{NetToHost16}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{NetToHost16()}{NetToHost16()}}
+{\footnotesize\ttfamily uint16\+\_\+t ip\+\_\+address\+::\+Net\+To\+Host16 (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespaceip__address_a7cb6eaf56e21a1cfc16dc62464fd0c50}\label{namespaceip__address_a7cb6eaf56e21a1cfc16dc62464fd0c50}} 
+\index{ip\_address@{ip\_address}!NetToHost32@{NetToHost32}}
+\index{NetToHost32@{NetToHost32}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{NetToHost32()}{NetToHost32()}}
+{\footnotesize\ttfamily uint32\+\_\+t ip\+\_\+address\+::\+Net\+To\+Host32 (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespaceip__address_a06aea5a4d7db1d3cecf7c00c368ef75d}\label{namespaceip__address_a06aea5a4d7db1d3cecf7c00c368ef75d}} 
+\index{ip\_address@{ip\_address}!NetToHost64@{NetToHost64}}
+\index{NetToHost64@{NetToHost64}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{NetToHost64()}{NetToHost64()}}
+{\footnotesize\ttfamily uint64\+\_\+t ip\+\_\+address\+::\+Net\+To\+Host64 (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespaceip__address_a07080c15027d6205df465a1271e7771b}\label{namespaceip__address_a07080c15027d6205df465a1271e7771b}} 
+\index{ip\_address@{ip\_address}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily constexpr NODISCARD bool ip\+\_\+address\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceip__address_aaa97eb707f9704b683a75b089ccca03a}{IPVersion}}}]{lhs,  }\item[{const \mbox{\hyperlink{namespaceip__address_aaa97eb707f9704b683a75b089ccca03a}{IPVersion}}}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{namespaceip__address_a80fafd37a6a83f36f162d65e3180bea0}\label{namespaceip__address_a80fafd37a6a83f36f162d65e3180bea0}} 
+\index{ip\_address@{ip\_address}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily std\+::ostream\& ip\+\_\+address\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{rhs,  }\item[{const \mbox{\hyperlink{classip__address_1_1_i_p_address}{IPAddress}} \&}]{lhs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceip__address_a24c7c9fcd3e766cca70f9b4bac3fe6cf}\label{namespaceip__address_a24c7c9fcd3e766cca70f9b4bac3fe6cf}} 
+\index{ip\_address@{ip\_address}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily std\+::ostream\& ip\+\_\+address\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{rhs,  }\item[{const \mbox{\hyperlink{classip__address_1_1_i_p_address_v4}{IPAddress\+V4}} \&}]{lhs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceip__address_aca7a90a37e9b45429d0706f774e1223d}\label{namespaceip__address_aca7a90a37e9b45429d0706f774e1223d}} 
+\index{ip\_address@{ip\_address}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily std\+::ostream\& ip\+\_\+address\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{rhs,  }\item[{const \mbox{\hyperlink{classip__address_1_1_i_p_address_v6}{IPAddress\+V6}} \&}]{lhs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceip__address_ad5486f8fd1bcd89041c465d2926abe33}\label{namespaceip__address_ad5486f8fd1bcd89041c465d2926abe33}} 
+\index{ip\_address@{ip\_address}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily std\+::ostream\& ip\+\_\+address\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{rhs,  }\item[{const \mbox{\hyperlink{classip__address_1_1_i_p_end_point}{IPEnd\+Point}} \&}]{lhs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceip__address_ab1349850a517b0010e7ae458140ff5b0}\label{namespaceip__address_ab1349850a517b0010e7ae458140ff5b0}} 
+\index{ip\_address@{ip\_address}!operator==@{operator==}}
+\index{operator==@{operator==}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily constexpr NODISCARD bool ip\+\_\+address\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceip__address_aaa97eb707f9704b683a75b089ccca03a}{IPVersion}}}]{lhs,  }\item[{\mbox{\hyperlink{namespaceip__address_aaa97eb707f9704b683a75b089ccca03a}{IPVersion}}}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{namespaceip__address_ac2912e0bf768f539a7808a00f7fef921}\label{namespaceip__address_ac2912e0bf768f539a7808a00f7fef921}} 
+\index{ip\_address@{ip\_address}!StringToWString@{StringToWString}}
+\index{StringToWString@{StringToWString}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{StringToWString()}{StringToWString()}}
+{\footnotesize\ttfamily std\+::wstring ip\+\_\+address\+::\+String\+To\+WString (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Unsafely converts a string to wstring 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em str} & string to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+wstring on success. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceip__address_ac6177eea60f87fbed8909a889beca575}\label{namespaceip__address_ac6177eea60f87fbed8909a889beca575}} 
+\index{ip\_address@{ip\_address}!StringToWStringS@{StringToWStringS}}
+\index{StringToWStringS@{StringToWStringS}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{StringToWStringS()}{StringToWStringS()}}
+{\footnotesize\ttfamily int ip\+\_\+address\+::\+String\+To\+WStringS (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str,  }\item[{std\+::wstring \&}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Safely converts a string to wstring 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em str} & string to convert \\
+\hline
+\mbox{\texttt{ out}}  & {\em result} & resulting wstring from convertion \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceip__address_ae6a01a90b062152369d6b94c4a6672a3}\label{namespaceip__address_ae6a01a90b062152369d6b94c4a6672a3}} 
+\index{ip\_address@{ip\_address}!to\_host\_byte\_order@{to\_host\_byte\_order}}
+\index{to\_host\_byte\_order@{to\_host\_byte\_order}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{to\_host\_byte\_order()}{to\_host\_byte\_order()}}
+{\footnotesize\ttfamily NODISCARD \mbox{\hyperlink{namespaceip__address_aa949a9b5586cb862dd86b03c5466e15b}{port\+\_\+host\+\_\+byte\+\_\+order\+\_\+t}} ip\+\_\+address\+::to\+\_\+host\+\_\+byte\+\_\+order (\begin{DoxyParamCaption}\item[{\+\_\+port\+\_\+network\+\_\+byte\+\_\+order\+\_\+t}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{namespaceip__address_a048f6f776ee3595dad8abab041ee172f}\label{namespaceip__address_a048f6f776ee3595dad8abab041ee172f}} 
+\index{ip\_address@{ip\_address}!to\_integer@{to\_integer}}
+\index{to\_integer@{to\_integer}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{to\_integer()}{to\_integer()}}
+{\footnotesize\ttfamily constexpr NODISCARD uint16\+\_\+t ip\+\_\+address\+::to\+\_\+integer (\begin{DoxyParamCaption}\item[{\+\_\+port\+\_\+network\+\_\+byte\+\_\+order\+\_\+t}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}, {\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{namespaceip__address_a424bfb1be3b6dba2dbc481a6704010c0}\label{namespaceip__address_a424bfb1be3b6dba2dbc481a6704010c0}} 
+\index{ip\_address@{ip\_address}!to\_network\_byte\_order@{to\_network\_byte\_order}}
+\index{to\_network\_byte\_order@{to\_network\_byte\_order}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{to\_network\_byte\_order()}{to\_network\_byte\_order()}}
+{\footnotesize\ttfamily NODISCARD \mbox{\hyperlink{namespaceip__address_a07c6d040e0324929d78d3f7b89e59a4b}{port\+\_\+network\+\_\+byte\+\_\+order\+\_\+t}} ip\+\_\+address\+::to\+\_\+network\+\_\+byte\+\_\+order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceip__address_aa949a9b5586cb862dd86b03c5466e15b}{port\+\_\+host\+\_\+byte\+\_\+order\+\_\+t}}}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{namespaceip__address_ad0fced5590907224ef21c6a5e39dbaa3}\label{namespaceip__address_ad0fced5590907224ef21c6a5e39dbaa3}} 
+\index{ip\_address@{ip\_address}!ToString@{ToString}}
+\index{ToString@{ToString}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily constexpr const char$\ast$ ip\+\_\+address\+::\+To\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceip__address_aac57069de31b7a57821d2de21870ca9c}{IPAddress\+V4\+Class}}}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{namespaceip__address_a31c89da8993f17be188be11a1ee15cd0}\label{namespaceip__address_a31c89da8993f17be188be11a1ee15cd0}} 
+\index{ip\_address@{ip\_address}!ToString@{ToString}}
+\index{ToString@{ToString}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily constexpr const char$\ast$ ip\+\_\+address\+::\+To\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceip__address_aaa97eb707f9704b683a75b089ccca03a}{IPVersion}}}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{namespaceip__address_aa7b6adbde5c95bd2cd1c22cd70b87ea4}\label{namespaceip__address_aa7b6adbde5c95bd2cd1c22cd70b87ea4}} 
+\index{ip\_address@{ip\_address}!WStringToString@{WStringToString}}
+\index{WStringToString@{WStringToString}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{WStringToString()}{WStringToString()}}
+{\footnotesize\ttfamily std\+::string ip\+\_\+address\+::\+WString\+To\+String (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{wstr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Unsafely converts a wstirng to string 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em wstr} & wstring to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+converted wstring to string on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceip__address_a9add724bd5579fefe1dd1ffa53bfe7a4}\label{namespaceip__address_a9add724bd5579fefe1dd1ffa53bfe7a4}} 
+\index{ip\_address@{ip\_address}!WStringToStringS@{WStringToStringS}}
+\index{WStringToStringS@{WStringToStringS}!ip\_address@{ip\_address}}
+\doxysubsubsection{\texorpdfstring{WStringToStringS()}{WStringToStringS()}}
+{\footnotesize\ttfamily int ip\+\_\+address\+::\+WString\+To\+StringS (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{wstr,  }\item[{std\+::string \&}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Safely converts a wstirng to string 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em wstr} & wstring to convert. \\
+\hline
+\mbox{\texttt{ out}}  & {\em result} & resulting string from convertion \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success 
+\end{DoxyReturn}

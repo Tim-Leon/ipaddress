@@ -1,0 +1,70 @@
+\hypertarget{_i_p_address_v4_8h}{}\doxysection{S\+:/dev/\+IPAddress/\+IPAddress/include/\+IPAddress\+V4.h File Reference}
+\label{_i_p_address_v4_8h}\index{S:/dev/IPAddress/IPAddress/include/IPAddressV4.h@{S:/dev/IPAddress/IPAddress/include/IPAddressV4.h}}
+{\ttfamily \#include $<$array$>$}\newline
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}IPAddress\+V6.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classip__address_1_1_i_p_address_v4}{ip\+\_\+address\+::\+IPAddress\+V4}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceip__address}{ip\+\_\+address}}
+\item 
+ \mbox{\hyperlink{namespaceip__address_1_1details}{ip\+\_\+address\+::details}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_i_p_address_v4_8h_ac2ceb6d6e03379123b3a89d27c359ace}{MAX\+\_\+\+IPV4\+\_\+\+ADDRESS\+\_\+\+CHAR\+\_\+\+MAX\+\_\+\+COUNT}}~15
+\item 
+\#define \mbox{\hyperlink{_i_p_address_v4_8h_a11075731f9cdde36051369941603c5c4}{MAX\+\_\+\+IPV4\+\_\+\+ADDRESS\+\_\+\+SIZE\+\_\+\+BYTES}}~4
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{namespaceip__address_a4365ce835b6546e1719f6ea93f341253}{ip\+\_\+address\+::\+Byte\+Array3}} = std\+::array$<$ uint8\+\_\+t, 3 $>$
+\item 
+using \mbox{\hyperlink{namespaceip__address_ad187786a2ccdd9d9ecef844889c68456}{ip\+\_\+address\+::\+Byte\+Array4}} = std\+::array$<$ uint8\+\_\+t, 4 $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{namespaceip__address_aac57069de31b7a57821d2de21870ca9c}{ip\+\_\+address\+::\+IPAddress\+V4\+Class}} \{ \newline
+\mbox{\hyperlink{namespaceip__address_aac57069de31b7a57821d2de21870ca9ca7fc56270e7a70fa81a5935b72eacbe29}{ip\+\_\+address\+::A}}
+, \mbox{\hyperlink{namespaceip__address_aac57069de31b7a57821d2de21870ca9ca9d5ed678fe57bcca610140957afab571}{ip\+\_\+address\+::B}}
+, \mbox{\hyperlink{namespaceip__address_aac57069de31b7a57821d2de21870ca9ca0d61f8370cad1d412f80b84d143e1257}{ip\+\_\+address\+::C}}
+, \mbox{\hyperlink{namespaceip__address_aac57069de31b7a57821d2de21870ca9caf623e75af30e62bbd73d6df5b50bb7b5}{ip\+\_\+address\+::D}}
+, \newline
+\mbox{\hyperlink{namespaceip__address_aac57069de31b7a57821d2de21870ca9ca3a3ea00cfc35332cedf6e5e9a32e94da}{ip\+\_\+address\+::E}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T , size\+\_\+t Size$>$ }\\std\+::array$<$ T, Size $>$ \mbox{\hyperlink{namespaceip__address_a989815a681b53d381ca12b33e69b727e}{ip\+\_\+address\+::mask}} (const std\+::array$<$ T, Size $>$ \&x, const std\+::array$<$ T, Size $>$ \&y)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::vector$<$ T $>$ \mbox{\hyperlink{namespaceip__address_abb1c085e2ad95888c74d71f986217f5c}{ip\+\_\+address\+::mask}} (const std\+::vector$<$ T $>$ \&x, const std\+::vector$<$ T $>$ \&y)
+\item 
+std\+::string \mbox{\hyperlink{namespaceip__address_ad6f16c07bf6410d991f3a3b99cb28cae}{ip\+\_\+address\+::mask}} (const std\+::string \&x, const std\+::string \&y)
+\item 
+constexpr const char $\ast$ \mbox{\hyperlink{namespaceip__address_ad0fced5590907224ef21c6a5e39dbaa3}{ip\+\_\+address\+::\+To\+String}} (IPAddress\+V4\+Class x)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_i_p_address_v4_8h_ac2ceb6d6e03379123b3a89d27c359ace}\label{_i_p_address_v4_8h_ac2ceb6d6e03379123b3a89d27c359ace}} 
+\index{IPAddressV4.h@{IPAddressV4.h}!MAX\_IPV4\_ADDRESS\_CHAR\_MAX\_COUNT@{MAX\_IPV4\_ADDRESS\_CHAR\_MAX\_COUNT}}
+\index{MAX\_IPV4\_ADDRESS\_CHAR\_MAX\_COUNT@{MAX\_IPV4\_ADDRESS\_CHAR\_MAX\_COUNT}!IPAddressV4.h@{IPAddressV4.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_IPV4\_ADDRESS\_CHAR\_MAX\_COUNT}{MAX\_IPV4\_ADDRESS\_CHAR\_MAX\_COUNT}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+IPV4\+\_\+\+ADDRESS\+\_\+\+CHAR\+\_\+\+MAX\+\_\+\+COUNT~15}
+
+\mbox{\Hypertarget{_i_p_address_v4_8h_a11075731f9cdde36051369941603c5c4}\label{_i_p_address_v4_8h_a11075731f9cdde36051369941603c5c4}} 
+\index{IPAddressV4.h@{IPAddressV4.h}!MAX\_IPV4\_ADDRESS\_SIZE\_BYTES@{MAX\_IPV4\_ADDRESS\_SIZE\_BYTES}}
+\index{MAX\_IPV4\_ADDRESS\_SIZE\_BYTES@{MAX\_IPV4\_ADDRESS\_SIZE\_BYTES}!IPAddressV4.h@{IPAddressV4.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_IPV4\_ADDRESS\_SIZE\_BYTES}{MAX\_IPV4\_ADDRESS\_SIZE\_BYTES}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+IPV4\+\_\+\+ADDRESS\+\_\+\+SIZE\+\_\+\+BYTES~4}
+
